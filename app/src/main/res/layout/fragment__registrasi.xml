@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Registrasi">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Registrasi"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:id="@+id/Lrg"/>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Lrg"
+        android:layout_centerHorizontal="true"
+        android:hint="UserName"
+        android:id="@+id/UserName"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserName"
+        android:layout_centerHorizontal="true"
+        android:hint="Name"
+        android:id="@+id/UName"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UName"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:id="@+id/UPassword"/>
+
+    <Button
+        android:id="@+id/btnRegistrasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Registrasi" />
+
+</RelativeLayout>

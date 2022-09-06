@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentSatu">
+    <fragment
+        android:id="@+id/fragmentSatu"
+        android:name="com.example.chaptertigatopicempat.FragmentSatu"
+        android:label="fragment_satu"
+        tools:layout="@layout/fragment_satu" >
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragmentDua"
+            app:destination="@id/fragmentDua" />
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragment_Registrasi"
+            app:destination="@id/fragment_Registrasi" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDua"
+        android:name="com.example.chaptertigatopicempat.FragmentDua"
+        android:label="fragment_dua"
+        tools:layout="@layout/fragment_dua" >
+        <action
+            android:id="@+id/action_fragmentDua_to_fragmentTiga"
+            app:destination="@id/fragmentTiga" />
+        <action
+            android:id="@+id/action_fragmentDua_to_fragmentSatu"
+            app:destination="@id/fragmentSatu" />
+        <action
+            android:id="@+id/action_fragmentDua_to_fragment_Profil2"
+            app:destination="@id/fragment_Profil2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTiga"
+        android:name="com.example.chaptertigatopicempat.FragmentTiga"
+        android:label="fragment_tiga"
+        tools:layout="@layout/fragment_tiga" >
+        <action
+            android:id="@+id/action_fragmentTiga_to_fragmentSatu"
+            app:destination="@id/fragmentSatu" />
+        <action
+            android:id="@+id/action_fragmentTiga_to_fragmentDua"
+            app:destination="@id/fragmentDua" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Profil2"
+        android:name="com.example.chaptertigatopicempat.Fragment_Profil"
+        android:label="fragment__profil"
+        tools:layout="@layout/fragment__profil" >
+        <action
+            android:id="@+id/action_fragment_Profil2_to_fragmentDua"
+            app:destination="@id/fragmentDua" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Registrasi"
+        android:name="com.example.chaptertigatopicempat.Fragment_Registrasi"
+        android:label="fragment__registrasi"
+        tools:layout="@layout/fragment__registrasi" >
+        <action
+            android:id="@+id/action_fragment_Registrasi_to_fragmentSatu"
+            app:destination="@id/fragmentSatu" />
+    </fragment>
+</navigation>
